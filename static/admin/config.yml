@@ -1,0 +1,19 @@
+backend:
+   name: github # github id로 로그인하려고 github이라고 해두었음.
+   repo:  Sunghyun01/Gatsby-blog
+   branch: master
+media_folder: static/img
+public_folder: /img
+collections:
+   - name: 'blog'
+     label: 'Blog'
+     folder: 'content/blog'
+     create: true
+     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+     editor:
+       preview: false
+     fields:
+       - { label: 'Title', name: 'title', widget: 'string' }
+       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+       - { label: 'Description', name: 'description', widget: 'string' }
+       - { label: 'Body', name: 'body', widget: 'markdown' }
