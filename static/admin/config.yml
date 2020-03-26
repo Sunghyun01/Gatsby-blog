@@ -27,7 +27,8 @@ collections:
        preview: false
      fields:
        - { label: 'Title', name: 'title', widget: 'string' }
-       - { label: 'category', name: 'category', widget:'string'}
+       - { label: 'category', name: 'category', widget: 'hidden', default: 'default'}
+       - { label: 'Draft', name: 'draft', widget: 'hidden', default: false}
        - { label: 'Publish Date', name: 'date', widget: 'datetime' }
        - { label: 'Description', name: 'description', widget: 'string' }
        - { label: 'Body', name: 'body', widget: 'markdown' }
