@@ -19,17 +19,31 @@ collections:
        - { label: 'Publish Date', name: 'date', widget: 'datetime' }
        - { label: 'Description', name: 'description', widget: 'string' }
        - { label: 'Body', name: 'body', widget: 'markdown' }
-   - name: 'default'
-     label: 'default'
-     folder: 'content/blog/default'
+   - name: 'university'
+     label: 'university'
+     folder: 'content/blog/university'
      create: true
      slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
      editor:
        preview: true
      fields:
        - { label: 'Title', name: 'title', widget: 'string' }
-       - { label: 'category', name: 'category', widget: 'hidden', default: 'default'}
+       - { label: 'category', name: 'category', widget: 'hidden', default: 'university'}
        - { label: 'Draft', name: 'draft', widget: 'hidden', default: false}
        - { label: 'Publish Date', name: 'date', widget: 'datetime' }
        - { label: 'Description', name: 'description', widget: 'string' }
        - { label: 'Body', name: 'body', widget: 'markdown' }
+    - name: 'default'
+      label: 'default'
+      folder: 'content/blog/default'
+      create: true
+      slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+      editor:
+        preview: true
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'category', name: 'category', widget: 'hidden', default: 'default'}
+        - { label: 'Draft', name: 'draft', widget: 'hidden', default: false}
+        - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+        - { label: 'Description', name: 'description', widget: 'string' }
+        - { label: 'Body', name: 'body', widget: 'markdown' }
