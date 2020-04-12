@@ -2,34 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=2"/>
 <link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d785e87462519aef6f5110f35e978e6d"/>
 <meta name="note" content="environment=development"/>
-<script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-      var hash = window.decodeURI(location.hash.replace('#', ''))
-      if (hash !== '') {
-        var element = document.getElementById(hash)
-        if (element) {
-          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
-          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
-          // Wait for the browser to finish rendering before scrolling.
-          setTimeout((function() {
-            window.scrollTo(0, offset - 0)
-          }), 0)
-        }
-      }
-      var content = document.getElementById('content');
-
-      var fireEvent = function(event, data) {
-        document.title = data;
-        window.location.hash = event;
-      };
-
-      var setContent = function(html) {
-        content.innerHTML = html;
-      };
-    })
-    
-  </script><link rel="icon" href="/icons/icon-48x48.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d785e87462519aef6f5110f35e978e6d"/><style type="text/css">
+<link rel="icon" href="/icons/icon-48x48.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d785e87462519aef6f5110f35e978e6d"/><style type="text/css">
     .anchor.before {
       position: absolute;
       top: 0;
